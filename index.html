@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en-US">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Localization</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.7/plyr.css" />
+    <link rel="stylesheet" href="main.css" />
+</head>
+
+<body>
+    <main class="w3-container">
+        <h1 class="w3-center">Voice Localization</h1>
+        <p>
+            <blockquote class="w3-panel w3-padding w3-leftbar w3-light-grey" cite="https://multilingualconnections.com/services/multimedia-localization/voiceover/">Voiceover projects can take many forms. You may have a script in a language that you need to be recorded in another language. Or, you may have an video that you need translated and recorded in a different language. The goal is to keep the intent and messaging in mind as we interpret the content.</blockquote>
+        </p>
+        <section class="w3-container w3-section w3-light-grey">
+            <h2>Localization Styles</h2>
+            <div class="w3-bar w3-black">
+                <button class="w3-bar-item w3-button tablink w3-red" onclick="openTab(event,'Religious')">Religious</button>
+                <button class="w3-bar-item w3-button tablink" onclick="openTab(event,'Animation')">Animation</button>
+                <button class="w3-bar-item w3-button tablink" onclick="openTab(event,'Commercial')">Commercial</button>
+                <button class="w3-bar-item w3-button tablink" onclick="openTab(event,'Narration')">Narration</button>
+                <button class="w3-bar-item w3-button tablink" onclick="openTab(event,'Audio_Books')">Audio Books</button>
+                <button class="w3-bar-item w3-button tablink" onclick="openTab(event,'E-learning')">E-learning</button>
+                <button class="w3-bar-item w3-button tablink" onclick="openTab(event,'Corporate')">Corporate</button>
+            </div>
+            <div id="Religious" class="tab">
+                <h3>Religious</h3>
+                <div class="w3-container w3-padding">
+                    <audio controls crossorigin playsinline>
+                        <source src="audio/religious.mp3" type="audio/mp3">
+                    </audio>
+                </div>
+            </div>
+            <div id="Animation" class="tab" style="display:none">
+                <h3>Animation</h3>
+                <div class="w3-container w3-padding">
+                    <audio controls crossorigin playsinline>
+                        <source src="audio/animation.mp3" type="audio/mp3">
+                    </audio>
+                </div>
+            </div>
+            <div id="Commercial" class="tab" style="display:none">
+                <h3>Commercial</h3>
+                <div class="w3-container w3-padding">
+                    <audio controls crossorigin playsinline>
+                        <source src="audio/commercial.mp3" type="audio/mp3">
+                    </audio>
+                </div>
+            </div>
+            <div id="Narration" class="tab" style="display:none">
+                <h3>Narration</h3>
+                <div class="w3-container w3-padding">
+                    <audio controls crossorigin playsinline>
+                        <source src="audio/narration.mp3" type="audio/mp3">
+                    </audio>
+                </div>
+            </div>
+            <div id="Audio_Books" class="tab" style="display:none">
+                <h3>Audio Books</h3>
+                <div class="w3-container w3-padding">
+                    <audio controls crossorigin playsinline>
+                        <source src="audio/audio_books.mp3" type="audio/mp3">
+                    </audio>
+                </div>
+            </div>
+            <div id="E-learning" class="tab" style="display:none">
+                <h3>E-learning</h3>
+                <div class="w3-container w3-padding">
+                    <audio controls crossorigin playsinline>
+                        <source src="audio/e-learning.mp3" type="audio/mp3">
+                    </audio>
+                </div>
+            </div>
+            <div id="Corporate" class="tab" style="display:none">
+                <h3>Corporate</h3>
+                <div class="w3-container w3-padding">
+                    <audio controls crossorigin playsinline>
+                        <source src="audio/corporate.mp3" type="audio/mp3">
+                    </audio>
+                </div>
+            </div>
+        </section>
+        <section class="w3-container w3-section">
+            <h2>Sight Translation</h2>
+            <p>
+                <blockquote class="w3-panel w3-padding w3-leftbar w3-light-grey" cite="https://www.attorneygeneral.jus.gov.on.ca/english/courts/interpreters/bilingual_test/section_5.php">Sight translation transforms a written message into a spoken message. It involves reading a text silently in the source language, and then speaking it in the target language.</blockquote>
+            </p>
+            <div class="w3-cell-row">
+                <div class="w3-container w3-cell w3-mobile">
+                    <div class="w3-section" style="height:38px;">
+                        <select id="language_select_text" onchange="openTabText()">
+                            <option value="Afrikaans">Afrikaans</option>
+                            <option value="Basque">Basque</option>
+                            <option value="Bulgarian">Bulgarian</option>
+                            <option value="Catalan">Catalan</option>
+                            <option value="Chinese">Chinese</option>
+                            <option value="Croatian">Croatian</option>
+                            <option value="Czech">Czech</option>
+                            <option value="Dutch">Dutch</option>
+                            <option value="English" selected>English</option>
+                            <option value="Finnish">Finnish</option>
+                            <option value="French">French</option>
+                            <option value="German">German</option>
+                            <option value="Hungarian">Hungarian</option>
+                            <option value="Icelandic">Icelandic</option>
+                            <option value="Indonesian">Indonesian</option>
+                            <option value="Italian">Italian</option>
+                            <option value="Japanese">Japanese</option>
+                            <option value="Korean">Korean</option>
+                            <option value="Malaysian">Malaysian</option>
+                            <option value="Polish">Polish</option>
+                            <option value="Portuguese">Portuguese</option>
+                            <option value="Romanian">Romanian</option>
+                            <option value="Russian">Russian</option>
+                            <option value="Serbian">Serbian</option>
+                            <option value="Slovak">Slovak</option>
+                            <option value="Spanish">Spanish</option>
+                            <option value="Swedish">Swedish</option>
+                            <option value="Turkish">Turkish</option>
+                            <option value="Zulu">Zulu</option>
+                        </select>
+                    </div>
+                    <div class="w3-section">
+                        <div id="English" class="tab_text">
+                            <p>We solemnly proclaim that God loves His children in every nation of the world. God the Father has given us the divine birth, the incomparable life, and the infinite atoning sacrifice of His Beloved Son, Jesus Christ. By the power of the Father, Jesus rose again and gained the victory over death. He is our Savior, our Exemplar, and our Redeemer.</p>
+                            <p>Two hundred years ago, on a beautiful spring morning in 1820, young Joseph Smith, seeking to know which church to join, went into the woods to pray near his home in upstate New York, USA. He had questions regarding the salvation of his soul and trusted that God would direct him.</p>
+                            <p>In humility, we declare that in answer to his prayer, God the Father and His Son, Jesus Christ, appeared to Joseph and inaugurated the “restitution of all things” (Acts 3:21) as foretold in the Bible. In this vision, he learned that following the death of the original Apostles, Christ’s New Testament Church was lost from the earth. Joseph would be instrumental in its return.</p>
+                            <p>We affirm that under the direction of the Father and the Son, heavenly messengers came to instruct Joseph and re-establish the Church of Jesus Christ. The resurrected John the Baptist restored the authority to baptize by immersion for the remission of sins. Three of the original twelve Apostles—Peter, James, and John—restored the apostleship and keys of priesthood authority. Others came as well, including Elijah, who restored the authority to join families together forever in eternal relationships that transcend death.</p>
+                            <p>We further witness that Joseph Smith was given the gift and power of God to translate an ancient record: the Book of Mormon—Another Testament of Jesus Christ. Pages of this sacred text include an account of the personal ministry of Jesus Christ among people in the Western Hemisphere soon after His Resurrection. It teaches of life’s purpose and explains the doctrine of Christ, which is central to that purpose. As a companion scripture to the Bible, the Book of Mormon testifies that all human beings are sons and daughters of a loving Father in Heaven, that He has a divine plan for our lives, and that His Son, Jesus Christ, speaks today as well as in days of old.</p>
+                            <p>We declare that The Church of Jesus Christ of Latter-day Saints, organized on April 6, 1830, is Christ’s New Testament Church restored. This Church is anchored in the perfect life of its chief cornerstone, Jesus Christ, and in His infinite Atonement and literal Resurrection. Jesus Christ has once again called Apostles and has given them priesthood authority. He invites all of us to come unto Him and His Church, to receive the Holy Ghost, the ordinances of salvation, and to gain enduring joy.</p>
+                            <p>Two hundred years have now elapsed since this Restoration was initiated by God the Father and His Beloved Son, Jesus Christ. Millions throughout the world have embraced a knowledge of these prophesied events.</p>
+                            <p>We gladly declare that the promised Restoration goes forward through continuing revelation. The earth will never again be the same, as God will “gather together in one all things in Christ” (Ephesians 1:10).</p>
+                            <p>With reverence and gratitude, we as His Apostles invite all to know—as we do—that the heavens are open. We affirm that God is making known His will for His beloved sons and daughters. We testify that those who prayerfully study the message of the Restoration and act in faith will be blessed to gain their own witness of its divinity and of its purpose to prepare the world for the promised Second Coming of our Lord and Savior, Jesus Christ.</p>
+                        </div>
+                        <div id="Spanish" class="tab_text" style="display:none">
+                            <p>Solemnemente proclamamos que Dios ama a Sus hijos en toda nación del mundo. Dios el Padre nos ha dado el nacimiento divino, la vida incomparable y el sacrificio expiatorio infinito de Su Amado Hijo, Jesucristo. Por el poder del Padre, Jesús resucitó y logró la victoria sobre la muerte. Él es nuestro Salvador, nuestro Ejemplo y nuestro Redentor.</p>
+                            <p>Hace doscientos años, en una bella mañana de primavera de 1820, el joven José Smith, procurando saber a qué iglesia debía unirse, fue a orar al bosque cerca de su casa en el norte del estado de Nueva York, Estados Unidos. Él tenía preguntas en cuanto a la salvación de su alma y confiaba en que Dios lo guiaría.</p>
+                            <p>Con humildad, declaramos que, en respuesta a su oración, Dios el Padre y Su Hijo Jesucristo se aparecieron a José y dieron comienzo a la “restauración de todas las cosas” (Hechos 3:21) como se predijo en la Biblia. En esa visión, José se enteró de que después de la muerte de los apóstoles originales, la Iglesia de Cristo, de la época del Nuevo Testamento, dejó de existir en la tierra, y que él desempeñaría un papel decisivo en su restitución.</p>
+                            <p>Afirmamos que, bajo la dirección del Padre y del Hijo, vinieron mensajeros celestiales para instruir a José y restablecer la Iglesia de Jesucristo. Juan el Bautista, como ser resucitado, restauró la autoridad para bautizar por inmersión para la remisión de pecados. Tres de los doce apóstoles originales —Pedro, Santiago y Juan— restauraron el apostolado y las llaves de la autoridad del sacerdocio. También vinieron otros, entre ellos Elías el Profeta, quien restauró la autoridad para unir a las familias por siempre en relaciones eternas que trascienden la muerte.</p>
+                            <p>También damos testimonio de que a José Smith se le dio el don y el poder de Dios para traducir un registro antiguo: El Libro de Mormón, Otro Testamento de Jesucristo. En las páginas de este texto sagrado se halla el relato del ministerio personal de Jesucristo entre la gente del hemisferio occidental poco después de Su resurrección. El libro enseña el propósito de la vida y explica la doctrina de Cristo, que es fundamental en ese propósito. Como libro canónico que acompaña a la Biblia, el Libro de Mormón testifica que todos los seres humanos son hijos e hijas de un amoroso Padre Celestial, que Él tiene un plan divino para nuestra vida y que Su Hijo, Jesucristo, nos habla en la actualidad, así como lo hizo en los días antiguos.</p>
+                            <p>Declaramos que La Iglesia de Jesucristo de los Santos de los Últimos Días, organizada el 6 de abril de 1830, es la Iglesia restaurada de Cristo, de la época del Nuevo Testamento. Esta Iglesia está fundada sobre la vida perfecta de su principal piedra del ángulo, Jesucristo, y sobre Su expiación infinita y resurrección literal. Jesucristo ha llamado de nuevo a apóstoles y les ha dado la autoridad del sacerdocio. Él nos invita a todos a venir a Él y a Su Iglesia, para recibir el Espíritu Santo, las ordenanzas de salvación y para obtener gozo duradero.</p>
+                            <p>Han transcurrido doscientos años desde que Dios el Padre y Su Hijo Amado, Jesucristo, dieron inicio a esta Restauración. Millones de personas en todo el mundo han aceptado el conocimiento de estos acontecimientos que fueron predichos.</p>
+                            <p>Con alegría declaramos que la Restauración prometida avanza por medio de la revelación continua. La tierra jamás volverá a ser la misma, dado que Dios “reunir[á] todas las cosas en Cristo” (Efesios 1:10).</p>
+                            <p>Con reverencia y gratitud, en calidad de Sus apóstoles invitamos a todos a saber —como nosotros lo sabemos— que los cielos están abiertos. Afirmamos que Dios está dando a conocer Su voluntad para con Sus amados hijos e hijas. Testificamos que aquellos que estudien con espíritu de oración el mensaje de la Restauración y actúen con fe serán bendecidos para obtener su propio testimonio de la divinidad y del propósito de ella, de preparar al mundo para la Segunda Venida prometida de nuestro Señor y Salvador, Jesucristo.</p>
+                        </div>
+                        <div id="Portuguese" class="tab_text" style="display:none">
+                            <p>Solenemente proclamamos que Deus ama Seus filhos de todas as nações do mundo. Deus, o Pai, deu-nos o nascimento divino, a incomparável vida e o infinito sacrifício expiatório de Seu Filho Amado, Jesus Cristo. Pelo poder do Pai, Jesus ressuscitou e conquistou a vitória sobre a morte. Ele é nosso Salvador, nosso Exemplo e nosso Redentor.</p>
+                            <p>Há duzentos anos, em uma linda manhã de primavera em 1820, o jovem Joseph Smith, procurando saber a qual igreja se unir, dirigiu-se a um bosque perto de sua casa, ao norte de Nova York, EUA, para orar. Ele tinha algumas dúvidas relativas à salvação de sua alma e teve a confiança de que Deus o orientaria.</p>
+                            <p>Com humildade, declaramos que, em resposta à sua oração, Deus, o Pai, e Seu Filho, Jesus Cristo, apareceram a Joseph e deram início à “restauração de todas as coisas” (Atos 3:21) conforme foi predito na Bíblia. Nessa visão, ele aprendeu que, após a morte dos primeiros apóstolos, a Igreja de Cristo da época do Novo Testamento deixou de existir na Terra. Joseph foi um instrumento fundamental para o retorno dela.</p>
+                            <p>Declaramos que, sob a orientação do Pai e do Filho, mensageiros celestiais vieram instruir Joseph e restabelecer a Igreja de Jesus Cristo. João Batista, ressuscitado, restaurou a autoridade para batizar por imersão para a remissão de pecados. Três dos primeiros doze apóstolos — Pedro, Tiago e João — restauraram o apostolado e as chaves da autoridade do sacerdócio. Outros também vieram, inclusive Elias, o Profeta, que restaurou a autoridade para unir as famílias para sempre em relacionamentos eternos que transcendem a morte.</p>
+                            <p>Também testemunhamos que a Joseph Smith foram dados o dom e o poder de Deus para traduzir um registro antigo, o Livro de Mórmon: Outro Testamento de Jesus Cristo. Páginas desse texto sagrado incluem um relato do ministério pessoal de Jesus Cristo entre o povo do Hemisfério Ocidental logo após Sua Ressurreição. O livro ensina sobre o propósito da vida e explica a doutrina de Cristo, que é essencial para esse propósito. Sendo um companheiro da Bíblia como livro de escrituras, o Livro de Mórmon testifica que todos os seres humanos são filhos e filhas de um Pai Celestial amoroso, que Ele tem um plano divino para nossa vida e que Seu Filho, Jesus Cristo, manifesta-Se hoje assim como o fez no passado.</p>
+                            <p>Declaramos que A Igreja de Jesus Cristo dos Santos dos Últimos Dias, organizada no dia 6 de abril de 1830, é a Igreja de Cristo da época do Novo Testamento restaurada. Essa Igreja está alicerçada na vida perfeita de sua principal pedra de esquina, Jesus Cristo, em Sua Expiação infinita e em Sua Ressurreição literal. Jesus Cristo chamou novamente apóstolos e deu-lhes a autoridade do sacerdócio. Ele convida todos nós a nos achegarmos a Ele e à Sua Igreja, a recebermos o Espírito Santo e as ordenanças de salvação e a obtermos alegria duradoura.</p>
+                            <p>Já se passaram duzentos anos desde que Deus, o Pai, e Seu Filho Amado, Jesus Cristo, deram início a essa Restauração. Milhões de pessoas no mundo todo aceitaram de boa vontade o conhecimento desses eventos que foram profetizados.</p>
+                            <p>Com alegria declaramos que a Restauração prometida segue adiante por meio de revelação contínua. A Terra jamais será a mesma, à medida que Deus “congregar em Cristo todas as coisas” (Efésios 1:10).</p>
+                            <p>Com reverência e gratidão, como apóstolos Dele, convidamos todos a saber — assim como nós sabemos — que os céus estão abertos. Afirmamos que Deus está desvendando Sua vontade para Seus amados filhos e filhas. Testificamos que aqueles que em oração estudarem a mensagem da Restauração e agirem com fé serão abençoados com a aquisição de seu próprio testemunho da divindade da Restauração e do propósito que ela tem de preparar o mundo para a prometida Segunda Vinda de nosso Senhor e Salvador, Jesus Cristo.</p>
+                        </div>
+                        <div id="Japanese" class="tab_text" style="display:none">
+                            <p>わたしたちは厳粛に宣言します。神は世界のすべての国にいる御自分の子供たちを愛しておられます。父なる神は，愛する御子イエス・キリストの降誕と，その比類ない生涯と無限の贖いの犠牲を，わたしたちのために備えてくださいました。御父の力によって，イエスはよみがえり，死に対して勝利を得られました。イ</p>エスはわたしたちの救い主であり，模範であり，贖い主です。</p>
+                            <p>200年前，1820年の美しい春の朝に，少年ジョセフ・スミスは，どの教会に加わるべきか知りたいと思い，アメリカ合衆国ニューヨーク州北部の自宅近くの森へ行き，祈りました。自分の魂の救いについて尋ねたいことがあり，神が導いてくださると信じていたのです。</p>
+                            <p>わたしたちは，父なる神とその御子イエス・キリストが，ジョセフ・スミスの祈りにこたえて彼に御姿を現し，聖書で予告されているように「万物更新」を開始されたことをへりくだり宣言します（使徒行伝3章21節）。この示現によって，ジョセフは，新約聖書の時代にあったキリストの教会が最初の使徒たちの死後に地上から失われたことを知りました。ジョセフは，その回復に貢献する者となるのです。</p>
+                            <p>御父と御子の指示の下，天の使者がジョセフを訪れ，イエス・キリストの教会を再び設立するために指示を与えたことを，わたしたちは断言します。復活したバプテスマのヨハネが，罪の赦しのために水に沈めるバプテスマを施す権能を回復しました。さらに，最初の12人の使徒のうちの3人，ペテロ，ヤコブ，ヨハネが，使徒職と神権の権能の鍵を回復しました。そのほかに訪れた使者の中には，死を超えて永続する関係を持てるよう家族を一つにつなぐ権能を回復したエリヤもいました。</p>
+                            <p>さらにわたしたちは，古代の記録である『モルモン書―イエス・キリストについてのもう一つの証』を翻訳するために，ジョセフ・スミスに神の賜物と力が与えられたことを証します。この神聖な書物には，復活後間もないイエス・キリストが西半球の民の間で親しく務めを果たされたことについても記されています。またこの聖典は，人生の目的を教え，その目的の中核を成すキリストの教義を説明しています。聖書と対を成す聖典として，モルモン書は，すべての人が愛にあふれた天の御父の息子や娘であること，御父がわたしたちの人生について神聖な計画をお持ちであること，そして御子イエス・キリストが昔と同様に今日も語りかけておられることを証しています。</p>
+                            <p>わたしたちは宣言します。1830年4月6日に組織された末日聖徒イエス・キリスト教会は，新約聖書の時代にあったキリストの教会が回復されたものです。この教会は，隅のかしら石であるイエス・キリストの完全な生涯と，主の無限の贖罪と文字どおりの復活をその基盤としています。イエス・キリストは再び使徒たちを召して，神権の権能を与えられました。そして，御自分のもとに来て，御自分の教会を訪れ，聖霊と救いの儀式を受け，永続する喜びを得るよう，わたしたち全員を招いておられます。</p>
+                            <p>父なる神と愛する御子イエス・キリストによってこの回復が始まってから，現在200年が経過しました。世界中で何百万もの人が，これらの預言されていた出来事を知り，受け入れてきました。</p>
+                            <p>わたしたちは喜んで宣言します。約束された回復は，絶えざる啓示によって進められていきます。神が「ことごとく，キリストにあって一つに帰せしめ」られるので（エペソ人への手紙1章10節），地は決して再び前の状態に戻ることはありません。</p>
+                            <p>敬虔の念と感謝をもって，わたしたちは主の使徒として，天が開かれていることを—わたしたちと同じように—知ってくださるよう，すべての人にお勧めします。わたしたちは，神が御自分の愛する息子たちや娘たちに対する御心を明らかにしておられると断言します。祈りをもって回復のメッセージを研究し，信仰により行動する人には，回復が神の御心であり，その目的がわたしたちの救い主である主イエス・キリストの約束された再臨のために世を備えることにあるとの確信が授けられることを証します</p>
+                        </div>
+                        <div id="Korean" class="tab_text" style="display:none">
+                            <p>우리는 하나님께서 세상의 모든 나라에 있는 그분의 자녀들을 사랑하신다는 것을 엄숙하게 선언한다. 하나님 아버지께서는 그분의 사랑하는 아들 예수 그리스도의 신성한 출생과, 비할 데 없는 생애와, 무한한 속죄 희생을 우리에게 주셨다. 예수께서는 아버지의 권능으로 다시 일어나 사망을 이기고 승리를 얻으셨다. 그분은 우리의 구주이시고, 우리의 모범이시며, 우리의 구속주이시다.</p>
+                            <p>200년 전 1820년 아름다운 봄날 아침, 어느 교회에 가입해야 할지 알고자 했던 어린 조셉 스미스는 미국 뉴욕주 북부에 위치한 자신의 집 근처 숲속으로 기도하러 들어갔다. 그는 자기 영혼의 구원에 관해 궁금한 점이 있었고 하나님께서 자신을 지도해 주실 것이라고 믿었다.</p>
+                            <p>우리는 그의 기도에 대한 응답으로 하나님 아버지와 그분의 아들 예수 그리스도께서 조셉에게 나타나셨으며 성경에 예언된 대로 “만물[의] 회복”을(사도행전 3:21) 시작하셨다는 것을 겸손하게 선언한다. 이 시현을 통해서 그는 신약 시대에 세워진 그리스도의 교회가 초대 사도들이 사망한 뒤 지상에서 사라졌음을 알게 되었다. 조셉은 그 교회가 다시 세워지는 데 자신이 중요한 역할을 하게 될 것도 알게 되었다.</p>
+                            <p>우리는 하늘의 사자들이 조셉을 가르치고 예수 그리스도의 교회를 다시 세우기 위해 아버지와 아들의 지시 아래 지상에 왔음을 분명히 선언한다. 부활한 침례 요한은 죄 사함을 위한 침수로써의 침례를 행할 권세를 회복하였다. 초대 십이사도 중 세 사람—베드로, 야고보, 요한—은 사도 직분과 신권 권세의 열쇠들을 회복하였다. 지상을 방문한 다른 사자들 중에는 엘리야도 있었다. 그는 가족이 죽음을 초월하여 영원히 함께할 수 있도록 결합해 주는 권세를 회복하였다.</p>
+                            <p>더 나아가서 우리는 조셉 스미스가 하나님의 은사와 능력으로 고대의 기록, 즉 몰몬경—예수 그리스도의 또 하나의 성약—을 번역했음을 증언한다. 이 성스러운 기록의 한 부분에는 예수 그리스도께서 부활하신 뒤 서반구에 있는 백성들에게 친히 성역을 베푸신 기사가 실려 있다. 몰몬경은 삶의 목적에 대해 가르쳐 주고 그 목적의 중심이 되는 그리스도의 교리를 설명해 준다. 몰몬경은 성경과 짝을 이루는 경전으로서, 모든 사람은 사랑이 충만하신 하늘 아버지의 아들과 딸이며, 그분께서 우리 삶에 대해 신성한 계획을 갖고 계신다는 것과, 그분의 아들 예수 그리스도께서 고대와 마찬가지로 오늘날 우리에게 말씀하고 계신다는 사실을 증거해 준다.</p>
+                            <p>우리는 1830년 4월 6일에 조직된 예수 그리스도 후기 성도 교회가 신약에 기록된 그리스도의 교회가 회복된 것임을 선언한다. 이 교회는 그 머리된 모퉁잇돌이신 예수 그리스도의 완전한 생애와, 그분의 무한한 속죄와, 그분의 실제적인 부활에 뿌리를 두고 있다. 예수 그리스도께서는 다시 한번 사도들을 부르셨고 그들에게 신권 권세를 주셨다. 주님께서는 우리 모두에게 그분과 그분의 교회로 나아와 성신과 구원 의식을 받고 지속되는 기쁨을 얻으라고 권유하고 계신다.</p>
+                            <p>하나님 아버지와 그분의 사랑하는 아들 예수 그리스도에 의해 회복이 시작된 지 200년이 흘렀다. 세계 곳곳에서 수백만 명의 사람들이 고대에 예언되었던 이 일들이 참됨을 받아들였다.</p>
+                            <p>우리는 이 약속된 회복이 지속적인 계시를 통해 계속 진행되고 있음을 기쁘게 선언한다. 하나님께서는 “다 그리스도 안에서 [하나로 모으실]” 것이며(에베소서 1:10) 세상은 결코 전과 같지 않을 것이다.</p>
+                            <p>경건하고 감사한 마음으로, 우리는 그분의 사도로서 하늘이 열려 있음을 모든 사람이—우리가 아는 것처럼—알도록 권유한다. 우리는 하나님께서 그분의 사랑하는 아들과 딸들을 위한 자신의 뜻을 알려 주고 계심을 분명히 선언한다. 회복의 메시지를 기도하는 마음으로 연구하고 신앙으로 실천하는 사람들은 회복이 하나님으로부터 비롯되었으며 그 목적은 우리의 주님이자 구주이신 예수 그리스도의 약속된 재림을 위해 세상을 준비시키는 것이라는 자신만의 증거를 축복으로 얻을 것임을 우리는 증언한다.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-container w3-cell w3-mobile" style="width:40vw;">
+                    <div class="w3-section" style="height:38px;">
+                        <select id="language_select">
+                            <option value="af">Afrikaans</option>
+                            <option value="eu">Basque</option>
+                            <option value="bg">Bulgarian</option>
+                            <option value="ca">Catalan</option>
+                            <option value="zh-CN">Chinese</option>
+                            <option value="hr">Croatian</option>
+                            <option value="cs">Czech</option>
+                            <option value="nl">Dutch</option>
+                            <option value="en-US" selected>English</option>
+                            <option value="fi">Finnish</option>
+                            <option value="fr">French</option>
+                            <option value="de">German</option>
+                            <option value="hu">Hungarian</option>
+                            <option value="is">Icelandic</option>
+                            <option value="id">Indonesian</option>
+                            <option value="it">Italian</option>
+                            <option value="ja">Japanese</option>
+                            <option value="ko">Korean</option>
+                            <option value="ms">Malaysian</option>
+                            <option value="pl">Polish</option>
+                            <option value="pt-BR">Portuguese</option>
+                            <option value="ro">Romanian</option>
+                            <option value="ru">Russian</option>
+                            <option value="sr">Serbian</option>
+                            <option value="sk">Slovak</option>
+                            <option value="es-CO">Spanish</option>
+                            <option value="sv">Swedish</option>
+                            <option value="tr">Turkish</option>
+                            <option value="zu">Zulu</option>
+                        </select>
+                        <button id="start_button" onclick="startDictation(event)" class="w3-button w3-right w3-round-large w3-blue">Start Dictation</button>
+                    </div>
+                    <div class="w3-section">
+                        <p id="interim" class="interim w3-round w3-light-grey" style="min-height:22px;"></p>
+                        <textarea id="final" class="final"></textarea>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="w3-container w3-section w3-light-grey">
+            <div class="w3-section" style="height:38px;">
+                <select id="language_select_audio" onchange="openTabAudio()">
+                    <option value="AFR">Afrikaans</option>
+                    <option value="EUS">Basque</option>
+                    <option value="BUL">Bulgarian</option>
+                    <option value="CAT">Catalan</option>
+                    <option value="ZHO">Chinese</option>
+                    <option value="HRV">Croatian</option>
+                    <option value="CES">Czech</option>
+                    <option value="NLD">Dutch</option>
+                    <option value="ENG" selected>English</option>
+                    <option value="FIN">Finnish</option>
+                    <option value="FRA">French</option>
+                    <option value="DEU">German</option>
+                    <option value="HUN">Hungarian</option>
+                    <option value="ISL">Icelandic</option>
+                    <option value="IND">Indonesian</option>
+                    <option value="ITA">Italian</option>
+                    <option value="JPN">Japanese</option>
+                    <option value="KOR">Korean</option>
+                    <option value="MSA">Malaysian</option>
+                    <option value="POL">Polish</option>
+                    <option value="POR">Portuguese</option>
+                    <option value="RON">Romanian</option>
+                    <option value="RUS">Russian</option>
+                    <option value="SRP">Serbian</option>
+                    <option value="SLK">Slovak</option>
+                    <option value="SPA">Spanish</option>
+                    <option value="SWE">Swedish</option>
+                    <option value="TUR">Turkish</option>
+                    <option value="ZUL">Zulu</option>
+                </select>
+            </div>
+            <div class="w3-section">
+                <div id="ENG" class="tab_audio">
+                    <h3>English</h3>
+                    <div class="w3-container w3-padding">
+                        <audio controls crossorigin playsinline>
+                            <source src="audio/ENG_pro.mp3" type="audio/mp3">
+                        </audio>
+                    </div>
+                </div>
+                <div id="SPA" class="tab_audio" style="display:none">
+                    <h3>Spanish</h3>
+                    <div class="w3-container w3-padding">
+                        <audio controls crossorigin playsinline>
+                            <source src="audio/SPA_pro.mp3" type="audio/mp3">
+                        </audio>
+                    </div>
+                </div>
+                <div id="POR" class="tab_audio" style="display:none">
+                    <h3>Portuguese</h3>
+                    <div class="w3-container w3-padding">
+                        <audio controls crossorigin playsinline>
+                            <source src="audio/POR_pro.mp3" type="audio/mp3">
+                        </audio>
+                    </div>
+                </div>
+                <div id="JPN" class="tab_audio" style="display:none">
+                    <h3>Japanese</h3>
+                    <div class="w3-container w3-padding">
+                        <audio controls crossorigin playsinline>
+                            <source src="audio/JPN_pro.mp3" type="audio/mp3">
+                        </audio>
+                    </div>
+                </div>
+                <div id="KOR" class="tab_audio" style="display:none">
+                    <h3>Korean</h3>
+                    <div class="w3-container w3-padding">
+                        <audio controls crossorigin playsinline>
+                            <source src="audio/KOR_pro.mp3" type="audio/mp3">
+                        </audio>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.plyr.io/3.6.7/plyr.polyfilled.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
