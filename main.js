@@ -89,14 +89,14 @@ function capitalize(s) {
 function startDictation(event) {
     if (recognizing) {
         startButton.innerHTML = 'Start Dictation';
-        startButton.style.backgroundColor = '#2196F3';
+        if (startButton.classList.contains('w3-red')) startButton.classList.remove('w3-red');
         document.getElementById('language_select').disabled = false;
         recognition.stop();
         return;
     }
     recognition.lang = document.getElementById('language_select').value;
     startButton.innerHTML = 'Stop Dictation';
-    startButton.style.backgroundColor = '#f44336';
+    if (!startButton.classList.contains('w3-red')) startButton.classList.add('w3-red');
     document.getElementById('language_select').disabled = true;
     recognition.start();
 }
